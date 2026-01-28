@@ -270,6 +270,20 @@ img {
     margin-left: 4px;
 }
 
+/* ボタン内の条件注記（白背景対応） */
+.cta-button .condition-note,
+.exit-popup-cta-btn .condition-note {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 11px;
+}
+
+/* オレンジ背景内の条件注記 */
+.urgency-badge .condition-note,
+.final-urgency .condition-note {
+    color: #bf360c;
+    font-weight: 500;
+}
+
 .card-header {
     background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
     padding: 20px 16px;
