@@ -379,6 +379,12 @@ img {
     background: #fff8f0;
 }
 
+.detail-card.second-place {
+    border: 3px solid #42a5f5;
+    box-shadow: 0 6px 20px rgba(66, 165, 245, 0.22);
+    background: #f5faff;
+}
+
 /* 条件注記 */
 .condition-note {
     font-size: 11px;
