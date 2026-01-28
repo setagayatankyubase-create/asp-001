@@ -1358,36 +1358,61 @@ img {
     left: 0;
     right: 0;
     z-index: 999;
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 20%);
-    padding: 16px 12px 12px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.fixed-cta-award-bar {
+    background: linear-gradient(135deg, #e65100 0%, #ff9800 100%);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    padding: 6px 12px;
 }
 
 .fixed-cta-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
-    padding: 12px 16px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    gap: 8px;
+    background: #faf6f0;
+    padding: 0 8px 0 0;
     text-decoration: none;
     color: inherit;
 }
 
-.fixed-cta-text {
+.fixed-cta-center {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    flex: 1;
+    min-width: 0;
+}
+
+.fixed-cta-banner {
+    flex: 1;
+}
+
+.fixed-cta-banner img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .fixed-cta-label {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 900;
     color: #333;
 }
 
 .fixed-cta-price {
-    font-size: 13px;
+    font-size: 12px;
     color: #666;
+}
+
+.fixed-cta-price strong {
+    font-size: 16px;
+    font-weight: 900;
+    color: #e65100;
 }
 
 .fixed-cta-price strong {
@@ -1400,14 +1425,38 @@ img {
     display: flex;
     align-items: center;
     gap: 6px;
-    background: #e65100;
+    background: linear-gradient(135deg, #e65100 0%, #ff9800 100%);
     color: #fff;
-    padding: 8px 16px;
-    font-size: 12px;
+    padding: 10px 18px;
+    font-size: 13px;
     font-weight: 700;
     border-radius: 50px;
     box-shadow: 0 3px 0 #bf360c;
     white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.fixed-cta-btn.shine-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    animation: shine 2s infinite;
+}
+
+@keyframes shine {
+    0% { left: -100%; }
+    50% { left: 100%; }
+    100% { left: 100%; }
 }
 
 .fixed-cta-btn svg {
