@@ -1373,6 +1373,8 @@ img {
     right: 0;
     z-index: 999;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+    background: #faf6f0;
+    padding-bottom: env(safe-area-inset-bottom, 0);
 }
 
 .fixed-cta-award-bar {
@@ -1381,7 +1383,8 @@ img {
     font-size: 11px;
     font-weight: 700;
     text-align: center;
-    padding: 6px 12px;
+    padding: 5px 12px;
+    margin: 0;
 }
 
 .fixed-cta-inner {
