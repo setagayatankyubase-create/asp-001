@@ -474,6 +474,13 @@ img {
     box-shadow: none;
 }
 
+.rank-note {
+    font-size: 10px;
+    font-weight: 500;
+    vertical-align: super;
+    margin-left: 2px;
+}
+
 .service-name {
     font-size: 24px;
     font-weight: 900;
@@ -547,6 +554,12 @@ img {
     font-size: 28px;
     font-weight: 900;
     color: #e65100;
+}
+
+.highlight-box sup {
+    font-size: 10px;
+    font-weight: 500;
+    color: #666;
 }
 
 /* ========== 説明ブロック ========== */
@@ -930,6 +943,36 @@ img {
     background: #fff8e1 !important;
 }
 
+/* 比較表の注釈 */
+.comparison-note {
+    font-size: 11px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* ランキング選定基準 */
+.ranking-criteria {
+    margin-top: 20px;
+    padding: 16px;
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.criteria-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.criteria-text {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.7;
+}
+
 /* ========== 最終CTA ========== */
 .final-cta-section {
     padding: 24px 16px 40px;
@@ -1209,6 +1252,15 @@ img {
     color: #b0bec5;
     margin-bottom: 6px;
     line-height: 1.6;
+}
+
+.footer-notice p.notice-important {
+    color: #ffcc80;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #455a64;
 }
 
 .footer-notice p:last-child {
