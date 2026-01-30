@@ -88,7 +88,22 @@ img {
     font-weight: 700;
 }
 
-/* ========== ヘッダー ========== */
+/* ========== PRバッジ（画像右上） ========== */
+.pr-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 3px;
+    z-index: 10;
+    letter-spacing: 0.5px;
+}
+
+/* ========== 旧ヘッダー（互換用） ========== */
 .site-header {
     background: linear-gradient(135deg, #e65100 0%, #ff9800 100%);
     color: #fff;
@@ -135,7 +150,187 @@ img {
     opacity: 0.8;
 }
 
-/* ========== ヒーロー ========== */
+/* ========== 新ヒーロー ========== */
+.hero-new {
+    position: relative;
+    overflow: hidden;
+    max-width: 480px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* 左上バッジ */
+.hero-date-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #333;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 24px 8px 12px;
+    clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+    z-index: 10;
+}
+
+/* 背景写真 */
+.hero-photo-bg {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(180deg, #fff5f8 0%, #ffe8f0 100%);
+}
+
+.hero-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* オーバーレイコンテンツ */
+.hero-overlay-content {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    z-index: 5;
+}
+
+/* カラフルタイトル */
+.hero-colorful-title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 8px;
+    letter-spacing: -2px;
+    text-shadow: 
+        3px 3px 0 #fff,
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        0 3px 6px rgba(0,0,0,0.15);
+}
+
+.title-char {
+    display: inline-block;
+}
+
+.char-green {
+    color: #4CAF50;
+}
+
+.char-pink {
+    color: #E91E63;
+}
+
+.char-cyan {
+    color: #00BCD4;
+}
+
+.char-orange {
+    color: #FF9800;
+}
+
+/* おすすめTOP2 */
+.hero-recommend {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.85);
+    padding: 6px 14px;
+    border-radius: 30px;
+    width: fit-content;
+}
+
+.recommend-label {
+    font-size: 12px;
+    color: #666;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.recommend-top {
+    font-size: 28px;
+    font-weight: 900;
+    color: #FF5722;
+}
+
+.recommend-number {
+    font-size: 42px;
+    color: #FF5722;
+}
+
+/* ポイントバー */
+.hero-points-bar {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff9800 0%, #e65100 100%);
+    padding: 14px 8px;
+}
+
+.point-item {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    padding: 0 6px;
+    border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+.point-item:last-child {
+    border-right: none;
+}
+
+.point-sub {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    opacity: 0.95;
+    margin-bottom: 2px;
+}
+
+.point-main {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* サービスロゴバー */
+.hero-service-logos {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background: #fff;
+    padding: 14px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.service-logo-item {
+    background: #f8f8f8;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+}
+
+.logo-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* 吹き出しテキスト */
+.hero-speech-bubbles {
+    background: #fff;
+    padding: 16px 16px;
+    text-align: center;
+}
+
+.speech-bubble {
+    display: inline-block;
+    color: #F06292;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 2px 8px;
+}
+
+/* ========== 旧ヒーロー（互換用） ========== */
 .hero {
     background: linear-gradient(180deg, #fff8f0 0%, #ffe0b2 100%);
     padding: 20px 16px 24px;
@@ -1663,6 +1858,53 @@ img {
     .fixed-cta-btn {
         padding: 8px 16px;
         margin: 0 4px;
+        font-size: 11px;
+    }
+}
+
+/* ========== 新ヒーローのレスポンシブ ========== */
+@media (max-width: 400px) {
+    .hero-colorful-title {
+        font-size: 40px;
+    }
+    
+    .hero-overlay-content {
+        top: 40px;
+        left: 12px;
+    }
+    
+    .recommend-top {
+        font-size: 24px;
+    }
+    
+    .recommend-number {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-colorful-title {
+        font-size: 36px;
+    }
+    
+    .hero-overlay-content {
+        top: 35px;
+        left: 10px;
+    }
+    
+    .recommend-top {
+        font-size: 22px;
+    }
+    
+    .recommend-number {
+        font-size: 32px;
+    }
+    
+    .point-sub {
+        font-size: 10px;
+    }
+    
+    .point-main {
         font-size: 11px;
     }
 }
