@@ -11,6 +11,23 @@
 
       gtag('config', 'AW-17917943633');
     </script>
+    <!-- Event snippet for ページビュー conversion page -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17917943633/r_UOCIXfwe8bENG--N9C',
+        'value': 1.0,
+        'currency': 'JPY',
+        'event_callback': callback
+      });
+      return false;
+    }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="【2026年最新】知育玩具のサブスク徹底比較！Cha Cha ChaとAnd TOYBOXを詳しく解説。">
@@ -205,7 +222,7 @@
                 </div>
                 <div class="rank-badge">注目サービス</div>
                 <h2 class="service-name">Cha Cha Cha</h2>
-                <a href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5ZU29" rel="nofollow" class="service-banner">
+                <a onclick="return gtag_report_conversion('https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5ZU29');" href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5ZU29" rel="nofollow" class="service-banner">
                     <img border="0" width="300" height="250" alt="Cha Cha Cha" src="https://www20.a8.net/svt/bgt?aid=260128656866&wid=001&eno=01&mid=s00000021840001007000&mc=1">
                 </a>
                 <img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4AVGK0+EBLENM+4OIO+5ZU29" alt="">
@@ -254,7 +271,7 @@
                 </div>
 
                 <!-- 中間CTA -->
-                <a href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5YRHE" rel="nofollow" class="mid-cta">
+                <a onclick="return gtag_report_conversion('https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5YRHE');" href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5YRHE" rel="nofollow" class="mid-cta">
                     <span class="mid-cta-text">詳しく見てみる</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mid-cta-icon">
                         <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -368,7 +385,7 @@
                         </svg>
                         <span>初月1円キャンペーン実施中</span>
                     </div>
-                    <a href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5YRHE" rel="nofollow" class="cta-button pulse-animation">
+                    <a onclick="return gtag_report_conversion('https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5YRHE');" href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5YRHE" rel="nofollow" class="cta-button pulse-animation">
                         <span class="cta-main">初月1円で始める</span>
                         <span class="cta-sub">▶ 1分で簡単申し込み</span>
                     </a>
@@ -385,7 +402,7 @@
             <div class="card-header secondary-header">
                 <div class="rank-badge blue">ピックアップ</div>
                 <h2 class="service-name">And TOYBOX</h2>
-                <a href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+7B5M5U+56OA+601S1" rel="nofollow" class="service-banner">
+                <a onclick="return gtag_report_conversion('https://px.a8.net/svt/ejp?a8mat=4AVGK0+7B5M5U+56OA+601S1');" href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+7B5M5U+56OA+601S1" rel="nofollow" class="service-banner">
                     <img border="0" width="300" height="250" alt="And TOYBOX" src="https://www21.a8.net/svt/bgt?aid=260128656442&wid=001&eno=01&mid=s00000024193001008000&mc=1">
                 </a>
                 <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4AVGK0+7B5M5U+56OA+601S1" alt="">
@@ -436,7 +453,7 @@
                 </div>
 
                 <!-- 中間CTA -->
-                <a href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+7B5M5U+56OA+5YRHE" rel="nofollow" class="mid-cta secondary">
+                <a onclick="return gtag_report_conversion('https://px.a8.net/svt/ejp?a8mat=4AVGK0+7B5M5U+56OA+5YRHE');" href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+7B5M5U+56OA+5YRHE" rel="nofollow" class="mid-cta secondary">
                     <span class="mid-cta-text">詳しく見てみる</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mid-cta-icon">
                         <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -533,7 +550,7 @@
                         </svg>
                         <span>LINEで簡単申し込み</span>
                     </div>
-                    <a href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+7B5M5U+56OA+5YRHE" rel="nofollow" class="cta-button secondary">
+                    <a onclick="return gtag_report_conversion('https://px.a8.net/svt/ejp?a8mat=4AVGK0+7B5M5U+56OA+5YRHE');" href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+7B5M5U+56OA+5YRHE" rel="nofollow" class="cta-button secondary">
                         <span class="cta-main">無料で相談してみる</span>
                         <span class="cta-sub">▶ プロに相談できる</span>
                     </a>
@@ -637,7 +654,7 @@
                 </svg>
                 <span>今なら初月1円でお試しできます</span>
             </div>
-            <a href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5YRHE" rel="nofollow" class="cta-button final-btn pulse-animation">
+            <a onclick="return gtag_report_conversion('https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5YRHE');" href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5YRHE" rel="nofollow" class="cta-button final-btn pulse-animation">
                 <span class="cta-main">初月1円で始める</span>
                 <span class="cta-sub">▶ 1分で簡単申し込み</span>
             </a>
@@ -650,14 +667,14 @@
 
     <!-- 離脱防止ポップアップ -->
     <div id="exitPopup" class="exit-popup">
-        <a href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5ZU29" rel="nofollow" class="exit-popup-overlay-link"></a>
+        <a onclick="return gtag_report_conversion('https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5ZU29');" href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5ZU29" rel="nofollow" class="exit-popup-overlay-link"></a>
         <div class="exit-popup-container">
             <button id="exitPopupClose" class="exit-popup-close-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
                     <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                 </svg>
             </button>
-            <a href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5ZU29" rel="nofollow" class="exit-popup-box-link">
+            <a onclick="return gtag_report_conversion('https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5ZU29');" href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5ZU29" rel="nofollow" class="exit-popup-box-link">
                 <img border="0" alt="Cha Cha Cha" src="https://www20.a8.net/svt/bgt?aid=260128656866&wid=001&eno=01&mid=s00000021840001007000&mc=1" class="exit-popup-img">
                 <span class="exit-popup-cta-btn">初月1円で始める ▶</span>
             </a>
@@ -668,7 +685,7 @@
     <!-- スマホ用追従CTA -->
     <div class="fixed-cta-wrap">
         <div class="fixed-cta-award-bar">日本サブスク大賞2024 受賞</div>
-        <a href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5ZMCH" rel="nofollow" class="fixed-cta-inner">
+        <a onclick="return gtag_report_conversion('https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5ZMCH');" href="https://px.a8.net/svt/ejp?a8mat=4AVGK0+EBLENM+4OIO+5ZMCH" rel="nofollow" class="fixed-cta-inner">
             <div class="fixed-cta-banner">
                 <img border="0" width="234" height="60" alt="Cha Cha Cha" src="https://www25.a8.net/svt/bgt?aid=260128656866&wid=001&eno=01&mid=s00000021840001006000&mc=1">
             </div>
